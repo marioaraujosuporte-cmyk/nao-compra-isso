@@ -25,6 +25,25 @@
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><text y='20' font-size='20'>💩</text></svg>") 12 12, auto;
   }
 
+  /* ─── HOMEM CAGANDO ─── */
+  .homem-cagando {
+    position: fixed;
+    top: 2px;
+    left: -60px;
+    z-index: 1000;
+    animation: correndo 12s linear infinite;
+    pointer-events: none;
+    font-size: 28px;
+    line-height: 1;
+  }
+  @keyframes correndo {
+    0%   { left: -80px; transform: scaleX(1); }
+    48%  { left: calc(100vw + 80px); transform: scaleX(1); }
+    50%  { left: calc(100vw + 80px); transform: scaleX(-1); }
+    98%  { left: -80px; transform: scaleX(-1); }
+    100% { left: -80px; transform: scaleX(1); }
+  }
+
   /* ─── FAIXA CORRENDO ─── */
   .ticker-wrap {
     background: var(--vermelho);
@@ -443,6 +462,9 @@
 </head>
 <body>
 
+<!-- HOMEM CAGANDO -->
+<div class="homem-cagando">💩</div>
+
 <!-- FAIXA CORRENDO -->
 <div class="ticker-wrap">
   <div class="ticker">
@@ -464,7 +486,7 @@
 
   <div class="preco-area">
     <span class="preco-riscado">R$ 97,00</span>
-    <span class="preco-real">R$ 19,90</span>
+    <span class="preco-real">R$ 4,99</span>
   </div>
   <span style="font-family:'Space Mono',monospace;font-size:11px;color:#444;margin-top:6px;">preço de merda, condizente com o conteúdo</span>
 </section>
@@ -500,7 +522,7 @@
   <!-- PRÉVIA -->
   <div class="historia-preview fade-in">
     <p class="historia-texto">
-      Quando eu era jovem, a gente subia no prédio de um amigo pra ouvir rock. O vigia do prédio odiava aquilo. Reclamava toda semana. Um dia ele exagerou, chamou a gente de vagabundos e mandou a gente "tomar no cu". Aí uma semana depois, eu caguei num copo descartável — desses de 180ml — e fui lá e melei a maçaneta do banheiro do vigia. Nunca mais ele reclamou do som. Motorhead!!! Hahahaha foda-se!!!
+      Todas noite a gente se reunia embaixo do prédio de um amigo para escutar rock em um toda fitas e conversar merda, mas o vigia do prédio enchia o saco e ficava dizendo que a gente era um bando de vagabundos, como se a gente não soubesse disso, mesmo assim ele precisava de uma lição, foi quando eu resolvi cagar em um copo, atrás de um carro mesmo na garagem e melar a maçaneta da porta do banheiro do vigia, nunca mais ele reclamou hiuahuiahuia
     </p>
     <p class="historia-autor">— história real. capítulo 3 do ebook. esse é só o começo.</p>
   </div>
@@ -531,7 +553,7 @@
     </div>
     <div class="dep-card">
       <div class="dep-estrelas">★★★★★</div>
-      <p class="dep-texto">"Mandei a história do copo pro grupo da família. Minha mãe saiu do grupo. Valeu muito os R$ 19,90."</p>
+      <p class="dep-texto">"Mandei a história do copo pro grupo da família. Minha mãe saiu do grupo. Valeu muito os R$ 4,99."</p>
       <p class="dep-nome">— G. Tavares, sobrevivente familiar</p>
     </div>
   </div>
@@ -546,7 +568,7 @@
 
   <div class="btn-container">
     <a href="#" class="btn-nao" style="font-size:32px;padding:22px 56px;" onclick="irParaHotmart(event)">💩 QUERO COMPRAR ESSA MERDA</a>
-    <span class="aviso-botao">acesso imediato em PDF · R$ 19,90 · pagamento via Hotmart/Kiwify</span>
+    <span class="aviso-botao">acesso imediato em PDF · R$ 4,99 · pagamento via Hotmart/Kiwify</span>
   </div>
 
   <div class="garantia">
@@ -565,7 +587,7 @@
 
 <!-- BADGE FLUTUANTE -->
 <a href="#" class="badge-flutuante" onclick="irParaHotmart(event)">
-  💩 COMPRA<br>R$ 19,90
+  💩 COMPRA<br>R$ 4,99
 </a>
 
 <script>
