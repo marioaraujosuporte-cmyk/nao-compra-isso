@@ -25,6 +25,26 @@
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><text y='20' font-size='20'>💩</text></svg>") 12 12, auto;
   }
 
+  /* ─── FRASE ANDANDO ─── */
+  .frase-andando {
+    position: fixed;
+    bottom: 80px;
+    left: -220px;
+    z-index: 997;
+    pointer-events: none;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 22px;
+    color: var(--amarelo);
+    text-shadow: 2px 2px 0 #000;
+    white-space: nowrap;
+    animation: frasepassando 18s linear infinite;
+    animation-delay: 4s;
+  }
+  @keyframes frasepassando {
+    0%   { left: -220px; }
+    100% { left: calc(100vw + 20px); }
+  }
+
   /* ─── HOMEM CAGANDO ─── */
   .homem-cagando {
     position: fixed;
@@ -462,6 +482,9 @@
 </head>
 <body>
 
+<!-- FRASE ANDANDO -->
+<div class="frase-andando">todo cú fede 💨</div>
+
 <!-- HOMEM CAGANDO -->
 <div class="homem-cagando">💩</div>
 
@@ -524,7 +547,7 @@
     <p class="historia-texto">
       Todas noite a gente se reunia embaixo do prédio de um amigo para escutar rock em um toda fitas e conversar merda, mas o vigia do prédio enchia o saco e ficava dizendo que a gente era um bando de vagabundos, como se a gente não soubesse disso, mesmo assim ele precisava de uma lição, foi quando eu resolvi cagar em um copo, atrás de um carro mesmo na garagem e melar a maçaneta da porta do banheiro do vigia, nunca mais ele reclamou hiuahuiahuia
     </p>
-    <p class="historia-autor">— história real. capítulo 3 do ebook. esse é só o começo.</p>
+    <p class="historia-autor">— história real. esse é só o começo.</p>
   </div>
 
   <div class="aviso-box fade-in">
@@ -568,7 +591,7 @@
 
   <div class="btn-container">
     <a href="#" class="btn-nao" style="font-size:32px;padding:22px 56px;" onclick="irParaHotmart(event)">💩 QUERO COMPRAR ESSA MERDA</a>
-    <span class="aviso-botao">acesso imediato em PDF · R$ 4,99 · pagamento via Hotmart/Kiwify</span>
+    <span class="aviso-botao">acesso imediato em PDF · R$ 4,99 · pagamento via Hotmart</span>
   </div>
 
   <div class="garantia">
